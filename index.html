@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Digital Signage Dashboard</title>
+    <link rel="stylesheet" href="styles.css?v=cyb3rbn">
+</head>
+<body>
+    <!-- Animated Cyber-Grid Background -->
+    <div class="cyber-grid-bg">
+        <div class="grid-overlay"></div>
+        <div class="scanning-line"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Main Dashboard Layout -->
+    <main class="dashboard">
+        <!-- Header / Logo -->
+        <header class="bento-tile header-tile">
+            <div class="logo-area">
+                <svg viewBox="0 0 100 100" width="80" height="80">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="#00b7af" stroke-width="4" stroke-dasharray="70 30" class="logo-spin"/>
+                    <circle cx="50" cy="50" r="30" fill="none" stroke="#00b7af" stroke-width="2" stroke-dasharray="20 10" class="logo-spin-reverse"/>
+                    <circle cx="50" cy="50" r="15" fill="#00b7af"/>
+                </svg>
+                <div class="brand-text">
+                    <h1>SKOOP <span class="fw-light">SYSTEMS</span></h1>
+                    <p class="brand-tagline">Corporate Information Display</p>
+                </div>
+            </div>
+            <div class="header-status">
+                <div class="status-dot"></div>
+                <span>SYSTEM ONLINE</span>
+            </div>
+        </header>
+
+        <!-- Clock / Date -->
+        <section class="bento-tile time-tile">
+            <div class="time-container">
+                <h2 id="current-time">00:00</h2>
+                <p id="current-date">Loading...</p>
+            </div>
+        </section>
+
+        <!-- Main Rotating Content -->
+        <section class="bento-tile main-content-tile">
+            <div class="slideshow" id="slideshow">
+                <!-- Slides injected via JS -->
+            </div>
+            <div class="slide-indicators" id="slide-indicators"></div>
+        </section>
+
+        <!-- System Stats -->
+        <section class="bento-tile stats-tile">
+            <h3 class="tile-title">Live Metrics</h3>
+            <div class="stat-row">
+                <span class="stat-label">Network Efficiency</span>
+                <span class="stat-value highlight">98.4%</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 98.4%"></div>
+            </div>
+
+            <div class="stat-row mt-4">
+                <span class="stat-label">Data Throughput</span>
+                <span class="stat-value">142 TB/s</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 76%"></div>
+            </div>
+
+            <div class="stat-row mt-4">
+                <span class="stat-label">Active Nodes</span>
+                <span class="stat-value">4,096</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 100%"></div>
+            </div>
+        </section>
+
+        <!-- Dynamic Chart -->
+        <section class="bento-tile chart-tile">
+            <h3 class="tile-title">Global Activity</h3>
+            <div class="mock-chart">
+                <div class="bar-container"><div class="bar" style="height: 40%"></div></div>
+                <div class="bar-container"><div class="bar" style="height: 75%"></div></div>
+                <div class="bar-container"><div class="bar" style="height: 55%"></div></div>
+                <div class="bar-container"><div class="bar" style="height: 90%"></div></div>
+                <div class="bar-container"><div class="bar" style="height: 35%"></div></div>
+                <div class="bar-container"><div class="bar" style="height: 85%"></div></div>
+                <div class="bar-container"><div class="bar" style="height: 65%"></div></div>
+                <div class="bar-container"><div class="bar" style="height: 50%"></div></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js?v=cyb3rbn"></script>
+</body>
+</html>
